@@ -22,15 +22,19 @@ function App() {
       const mx = document.getElementById('blind-mask');
       if (mx) {
         const rect = mx.getBoundingClientRect()
-        mx.style.setProperty('--pos-x', `${e.clientX - rect.left}px`);
-        mx.style.setProperty('--pos-y', `${e.clientY - rect.top}px`);
+        let posx = (e.clientX - rect.left)/zoom;
+        let posy = (e.clientY - rect.top)/zoom;
+        console.log(posx);
+        console.log(posy);
+        mx.style.setProperty('--pos-x', `${posx}px`);
+        mx.style.setProperty('--pos-y', `${posy}px`);
       }
     };
     window.addEventListener('mousemove', handleMouseMove);
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
     };
-  }, []); 
+  }, [zoom]); //rerenders on zoom to change the mouse listener to have the size change for the zoom
 
   return (
     <div className='app-container'>

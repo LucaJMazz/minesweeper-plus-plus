@@ -203,16 +203,20 @@ hr {
     width: 2.5rem;
     height: 2.5rem;
 
-    border-radius: 1000rem;
-    border: solid, .1rem, var(--black-colour);
-    background-color: var(--white-colour);
+    padding: 0px;
+    font-size: 30px;
+
+    border: none;
+    color: var(--white-colour);
+    background: none;
 
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: 200ms;
     cursor: pointer;
+    opacity: 0.35;
 }
 .zoom-button:hover {
-    transform: scale(110%);
+    opacity: 0.6;
 }
 .zoom-button:active {
     transform: scale(98%);
