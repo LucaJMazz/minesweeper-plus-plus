@@ -161,8 +161,8 @@ function SizeMenu({closeMenu}) {
             const raw = e.target.value;
             if (raw === "") return;
             const val = Math.max(1, Number(raw));
-            val >= rows*columns ? dispatch(setMines(rows*columns - 1)) :
-            dispatch(setMines(val))
+            let dimension = rows*columns;
+            (val >= dimension) ? dispatch(setMines(dimension - 1)) : dispatch(setMines(val));
             dispatch(resetBoard());
             }}> 
           </input>
