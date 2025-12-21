@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    background-color: var(--background-colour);
+    color: var(--white-colour);
+
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    --primary-colour: #50556f;
+    --dark-colour: #392244;
+    --light-colour: #78899e;
+
+    --background-colour: #282A36; 
+    --white-colour: #D9D9D9;
+    --black-colour: rgb(32, 24, 34);
+
+    --gui-chizel-size: .42rem;
+}
+
+.chizeled-in {
+    border: var(--gui-chizel-size) solid var(--dark-colour);
+    border-right: var(--gui-chizel-size) solid var(--light-colour);
+    border-bottom: var(--gui-chizel-size) solid var(--light-colour);
+    border-radius: var(--gui-chizel-size);
+}
+
+.chizeled-out {
+    border: var(--gui-chizel-size) solid var(--dark-colour);
+    border-left: var(--gui-chizel-size) solid var(--light-colour);
+    border-top: var(--gui-chizel-size) solid var(--light-colour);
+    border-radius: var(--gui-chizel-size); 
+}

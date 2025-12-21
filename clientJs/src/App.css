@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+    --button-size: 11rem;
+    --zoom: 1;
+}
+
+.board-holder {
+    transform: scale(var(--zoom));
+    transform-origin: top center;
+}
+
+.title {
+    font-family: "Fugaz One", sans-serif;
+    font-size: 58px;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0px;
+    margin-top: 1.5rem;
+    letter-spacing: 0.05em;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: scroll;
+}
+
+.menu-blur {
+    filter: blur(.4rem);
+    transition: ease-in-out;
+    transition-duration: 100ms;
+}
+.menu-unblur {
+    filter: blur(0rem);
+    transition: ease-in-out;
+    transition-duration: 100ms;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding: 0px;
+    margin-bottom: 1.7rem;
+    gap:2rem;
+}
+hr {
+    border: .01rem solid var(--black-colour);
+    width: 80%;
+}
+.size-span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    margin: .5rem;
+    padding: 0px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.size-span p{
+    margin: .2rem;
+    margin-bottom: .5rem;
+}
+.size-span input {
+    width: 4rem;
+    height: 2rem;
+    font-size: 22px;
+    text-align: center;
+
+    outline: none;
+    border: .1rem solid var(--black-colour);
+    border-radius: 1rem;
+    background: color-mix(in srgb, var(--white-colour) 100%, white 80%);
+}
+
+
+.mode-dropdown {
+    position: relative;
+    z-index: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(180deg, var(--white-colour) 0%, #b6b4b4 100%);
+    font-family: monospace;
+    font-size: 22.5px;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: .7rem;
+
+    height: 4rem;
+    width: var(--button-size);
+
+    font-family: "Space Mono", monospace;
+    font-weight: 800;
+    font-style: normal;
+
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 200ms;
+
+    margin: 0px;
+    box-shadow: 0rem .3rem 0rem .1rem rgb(145, 145, 145), 0rem .6rem .5rem .08rem rgba(27, 2, 39, 0.617);
+}
+.mode-dropdown::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    border-radius: 1000rem;
+    background: linear-gradient(0deg, var(--white-colour) 0%, #b6b4b4 100%);;
+}
+.mode-dropdown:hover {
+    font-size: 23px;
+}
+.mode-dropdown:active {
+    transform: translateY(.25rem);
+    box-shadow: 0rem .05rem 0rem .1rem rgb(145, 145, 145), 0rem .1rem .5rem .08rem rgba(27, 2, 39, 0.617);
+}
+.mode-dropdown p {
+    margin: 0px;
+    margin-right: .5rem;
+}
+
+.dropdown-container {
+    position: absolute;
+    translate: 0 .75rem;
+
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--white-colour);
+    outline: none;
+    border: none;
+    border-radius: .6rem;
+    width: var(--button-size);
+
+    color: var(--black-colour);
+    font-weight: 600;
+
+    box-shadow: 0rem 1rem 1rem .3rem rgba(0, 0, 0, 0.291);
+}
+
+.dropdown-item {
+    background-color: var(--white-colour);
+    font-family: monospace;
+    font-size: 22.5px;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: .6rem;
+
+    width: 100%;
+    padding: .6rem;
+    /* padding-inline: 2.5rem; */
+
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+
+    transition: ease-in-out;
+    transition-duration: 200ms;
+}
+.dropdown-item:hover{
+    transform: scale(108%);
+}
+.dropdown-item.checked {
+    z-index: 15;
+    border: solid .35rem var(--background-colour);
+    background:  linear-gradient(180deg, var(--white-colour) 0%, #cecccc 100%);
+}
+
+.blind-mask {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    --size: 3.6rem;
+
+    mask-image: radial-gradient(circle var(--size) at calc(var(--pos-x)) calc(var(--pos-y)),
+            black 0%,
+            black 40%,
+            transparent 70%);
+}
+
+.zoom-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    border-radius: 1000rem;
+    border: solid, .1rem, var(--black-colour);
+    background-color: var(--white-colour);
+
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 200ms;
+    cursor: pointer;
+}
+.zoom-button:hover {
+    transform: scale(110%);
+}
+.zoom-button:active {
+    transform: scale(98%);
+}

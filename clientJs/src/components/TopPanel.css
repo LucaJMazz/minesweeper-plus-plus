@@ -1,0 +1,72 @@
+
+.top-panel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    padding-inline: 1rem;
+    width: calc(97.5% - 2rem);
+    height: 4rem;
+
+    background-color: color-mix(in srgb, var(--primary-colour), 10% black);
+
+    min-width: 17rem;
+}
+
+.digital-text {
+    --chroma: 0.08rem;
+    color: whitesmoke;
+    font-size:  28px;
+    text-shadow: var(--chroma) var(--chroma) 1px #ff6363, calc(-1 * var(--chroma)) calc(-1 * var(--chroma)) 1px #00fbff;
+}
+
+.digital-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.centre {
+    /* background-color: red; */
+    position: absolute;
+    left:0;
+    width: 100%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 3rem;
+    width: 3rem;
+    cursor: pointer;
+    user-select: none;
+
+    overflow: hidden;
+    background-color: var(--primary-colour);
+
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: 200ms;
+}
+.clear-button:hover{
+    transform: scale(102%);
+}
+.clear-button:active {
+    transform: scale(95%);
+}
+
+.clear-button:first-child {
+    font-size: 2rem;
+}
+
+.noir {
+    filter: grayscale(1);
+}

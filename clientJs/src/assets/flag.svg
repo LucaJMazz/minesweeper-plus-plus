@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+	<style>
+		.s0 { fill: #d5b130;stroke: #352540;stroke-miterlimit:10;stroke-width: 32 } 
+		.s1 { fill: #e71616;stroke: #000000;stroke-miterlimit:10;stroke-width: 22 } 
+		.s2 { fill: #5d446e;stroke: #352540;stroke-miterlimit:10;stroke-width: 22 } 
+		.s3 { fill: #ff0000;stroke: #352540;stroke-miterlimit:10;stroke-width: 25 } 
+	</style>
+	<g id="Layer 1">
+		<path id="Shape 1" fill-rule="evenodd" class="s0" d="m311.38 326.28v-295.28z"/>
+		<path id="Shape 2" fill-rule="evenodd" class="s1" d=""/>
+		<path id="Shape 3" fill-rule="evenodd" class="s2" d="m312.17 308.69l65.55 79.59h-314.24l69.63-79.59z"/>
+		<path id="Shape 4" fill-rule="evenodd" class="s3" d="m312.48 34.68v175.49h-284.94l69.75-87.41-70.29-88.08z"/>
+	</g>
+</svg>
