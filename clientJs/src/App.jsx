@@ -35,7 +35,7 @@ function App() {
   return (
     <div className='app-container'>
       <h1 className="title">
-        minesweeper
+        minesweeper++
       </h1>
 
       <div className='input-container'>
