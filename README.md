@@ -1,16 +1,60 @@
-# React + Vite
+# 💣 Minesweeper++
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, feature-rich Minesweeper clone built with React that expands the classic game with multiple unique modes, dynamic board generation, and smooth state management.
 
-Currently, two official plugins are available:
+Play the classic game — or suffer in the weird modes 😈
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Play Now!
+- 🔗 **Live Site:** [Play Minesweeper++ Now](https://minesweeper-plus-plus.netlify.app)
+🚀 Deployed with Netlify
 
-## React Compiler
+⸻
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠 Tech Stack
+	•	React + Vite – fast dev environment and component-based UI
+	•	Redux – centralized game state management
+	•	Tailwind CSS – clean, responsive styling
+	•	JavaScript – core game logic
+	•	Netlify – deployment & hosting
 
-## Expanding the ESLint configuration
+⸻
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🎮 Features
+	•	✅ Classic Minesweeper gameplay
+	•	🎲 Dynamic board generation
+	•	🧠 Centralized game state using Redux
+	•	🔄 Efficient state updates for performance
+	•	🧩 5 unique custom game modes
+	•	📱 Responsive UI (playable on desktop & mobile)
+	•	⚡ Fast reloads & smooth interactions
+
+⸻
+
+🧨 Game Modes
+
+Minesweeper++ goes beyond the standard rules with custom modes designed to change how you think about the game. Each mode tweaks board behavior, difficulty, or mechanics to create a fresh experience instead of just “bigger board, more bombs.”
+
+(You’ll understand once you die a few times.)
+
+⸻
+
+🚀 How to Play
+	1.	Open the Live Site￼
+	2.	Choose a game mode
+	3.	Click tiles to reveal them
+	4.	Numbers show how many mines are adjacent
+	5.	Flag suspected mines
+	6.	Clear the board without detonating a mine
+
+⸻
+
+📦 Local Development
+
+If you want to run it locally:
+git clone https://github.com/your-username/minesweeper-plus-plus.git
+cd minesweeper-plus-plus
+npm install
+npm run dev
+
+Built by Luca Mazzotta
+If you like Minesweeper or hate yourself just enough to play the harder modes — enjoy.
