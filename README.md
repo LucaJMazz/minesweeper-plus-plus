@@ -57,4 +57,3 @@ npm install
 npm run dev
 
 Built by Luca Mazzotta
-If you like Minesweeper or hate yourself just enough to play the harder modes — enjoy.
