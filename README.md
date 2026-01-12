@@ -11,22 +11,22 @@ Play the classic game — or suffer in the weird modes 😈
 ⸻
 
 🛠 Tech Stack
-	•	React + Vite – fast dev environment and component-based UI
-	•	Redux – centralized game state management
-	•	Tailwind CSS – clean, responsive styling
-	•	JavaScript – core game logic
-	•	Netlify – deployment & hosting
+• React + Vite – fast dev environment and component-based UI
+• Redux – centralized game state management
+• Tailwind CSS – clean, responsive styling
+• JavaScript – core game logic
+• Netlify – deployment & hosting
 
 ⸻
 
 🎮 Features
-	•	✅ Classic Minesweeper gameplay
-	•	🎲 Dynamic board generation
-	•	🧠 Centralized game state using Redux
-	•	🔄 Efficient state updates for performance
-	•	🧩 5 unique custom game modes
-	•	📱 Responsive UI (playable on desktop & mobile)
-	•	⚡ Fast reloads & smooth interactions
+• ✅ Classic Minesweeper gameplay
+• 🎲 Dynamic board generation
+• 🧠 Centralized game state using Redux
+• 🔄 Efficient state updates for performance
+• 🧩 5 unique custom game modes
+• 📱 Responsive UI (playable on desktop & mobile)
+• ⚡ Fast reloads & smooth interactions
 
 ⸻
 
