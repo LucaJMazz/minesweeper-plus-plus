@@ -51,7 +51,7 @@ Minesweeper++ goes beyond the standard rules with custom modes designed to chang
 📦 Local Development
 
 If you want to run it locally:
-git clone https://github.com/your-username/minesweeper-plus-plus.git
+git clone https://github.com/lucajmazz/minesweeper-plus-plus.git
 cd minesweeper-plus-plus
 npm install
 npm run dev
