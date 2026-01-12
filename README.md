@@ -2,7 +2,7 @@
 
 A modern, feature-rich Minesweeper clone built with React that expands the classic game with multiple unique modes, dynamic board generation, and smooth state management.
 
-Play the classic game — or suffer in the weird modes 😈
+Play the classic game — or try out the different game modes for a fun new epxerience
 
 ## Play Now!
 - 🔗 **Live Site:** [Play Minesweeper++ Now](https://minesweeper-plus-plus.netlify.app)
